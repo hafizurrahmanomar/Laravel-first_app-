@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+{{-- main --}}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>welcome</title>
-</head>
-
-<body>
-    <h1>About Page</h1>
-    <a href="{{ route('homepage') }}">Home</a>
-    <a href="{{ route('contactpage') }}">Contact</a>
-</body>
-
-</html>
+@extends('layout.master')
+{{-- title --}}
+@section('title', 'about-page')
+{{--  body --}}
+@section('content')
+    <h1>This is About Page</h1>
+    @include('partials.contactform')
+@endsection

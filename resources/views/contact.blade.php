@@ -1,17 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+{{-- main --}}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>welcome</title>
-</head>
+@extends('layout.master')
+{{-- title --}}
 
-<body>
-    <h1>Contact Page</h1>
-    <a href="{{ route('homepage') }}">Home</a>
-    <a href="{{ route('about') }}">About</a>
-</body>
+@section('title', 'contact-page')
 
-</html>
+{{-- Internal css  --}}
+@section('style')
+    <style>
+        /* Add your CSS styles here */
+        body {
+            background-color: royalblue;
+        }
+    </style>
+
+
+@endsection
+
+
+
+{{--  body --}}
+@section('content')
+    <h1>This is Contact Page</h1>
+    @include('partials.contactform')
+@endsection
