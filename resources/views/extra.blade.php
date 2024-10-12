@@ -2,12 +2,12 @@
 
 @extends('layout.master')
 {{-- title --}}
-@section('title', 'Home-page')
+@section('title', 'extra-page')
 {{--  body --}}
 @section('content')
     <h1>This is Extra Page</h1>
 
-    {{-- @component('componets.alert')
+    @component('componets.alert')
         @slot('alert_title')
             <h2>This is Slot Title</h2>
         @endslot
@@ -15,11 +15,11 @@
             <p>Lorem ipsum dolor sit amet consectetur</p>
         @endslot
         <h5>Something else</h5>
-    @endcomponent --}}
+    @endcomponent
 
-    @alert
+    {{-- @alert
     <h2>This is alert with alias create=> See the AppServiceProvider.php</h2>
-    @endalert
+    @endalert --}}
 
 
 @endsection
