@@ -10,7 +10,7 @@
     <style>
         /* Add your CSS styles here */
         body {
-            background-color: royalblue;
+            background-color: azure;
         }
     </style>
 

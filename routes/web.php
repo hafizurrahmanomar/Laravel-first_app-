@@ -14,6 +14,12 @@ Route::get('/contact', function () {
  return view('contact');
 })->name('contactpage');
 
+
+Route::get('/extra', function () {
+ return view('extra');
+})->name('extrapage');
+
 // Route::get('/','SiteController@index');
+
 // Route::get('/about','SiteController@about');
 // Route::get('/contact','SiteController@contact');
